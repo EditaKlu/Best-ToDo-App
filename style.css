@@ -1,0 +1,94 @@
+.body {
+    background-color: rgb(245, 243, 243);
+    margin: 0 auto;
+}
+
+.header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    padding: 0px 0px 0px 30px;
+    box-shadow: 0 8px 2px -2px lightgray;
+}
+.pavadinimas {
+    float: left;
+}
+span {
+    color: #0000ff;
+}
+.fa-brands {
+    color: blue;
+    padding: 0px 10px;
+}
+.icons {
+    padding: 0px 40px 0px 40px;
+}
+.fa-brands:hover {
+    color: lightskyblue;
+}
+input:checked {
+    outline: solid black;
+}
+.task-input {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    height: 200px;
+    width: 600px;
+    margin: 100px auto 50px;
+    box-shadow: 0 4px 2px 1px lightgray;
+    border-radius: 5px;
+}
+.form {
+    display: flex;
+    justify-content: center;
+}
+#task {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px 0px 0px 5px;
+    border-style: solid none solid solid;
+}
+::placeholder {
+    color: lightblue;
+    font-weight: bold;
+    font-size: larger;
+    padding-left: 5px;
+}
+.add {
+    width: 150px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+    border-radius: 0px 5px 5px 0px;
+    border-style: solid solid solid none;
+}
+.add:hover  {
+    background-color: rgb(7, 7, 187);
+}
+.task-output {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    height: 80px;
+    width: 600px;
+    margin: 50px auto 50px;
+    box-shadow: 0 4px 2px 1px lightgray;
+    border-radius: 5px;
+}
+.your-tasks {
+    text-align: center;
+    padding-top: 20px;
+    letter-spacing: 2px;
+}
+.error {
+    color: red;
+    font-size: x-small;
+    letter-spacing: 1px;
+    padding-left: 73px;
+}
