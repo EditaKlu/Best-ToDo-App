@@ -30,8 +30,8 @@ span {
 .fa-brands:hover {
     color: lightskyblue;
 }
-input:checked {
-    outline: solid black;
+input:focus {
+    border: 2px solid black;
 }
 .task-input {
     font-family: 'Roboto', sans-serif;
@@ -53,6 +53,7 @@ input:checked {
     border-style: solid none solid solid;
     border-color: lightgray;
     border-width: 1px;
+    background-color: #f8fafc;
 }
 ::placeholder {
     color: lightgray;
@@ -133,4 +134,101 @@ input:checked {
 }
 .task-not-done {
     padding-left: 50px;
+}
+.task-edit {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    height: 300px;
+    width: 600px;
+    margin: 100px auto 50px;
+    box-shadow: 0 5px 8px 1px lightgray;
+    border-radius: 5px;
+    font-size: 17px;
+}
+.task-id {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 300px 0px 30px;
+}
+.id-number {
+    margin-top: 0px;
+}
+.id-name {
+    margin-top: 0px;
+    letter-spacing: 1px;
+}
+.form-change {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px 0px 30px;
+    margin-bottom: 15px;
+}
+.completed {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 200px 0px 30px;
+}
+#task-change {
+    width: 340px;
+    height: 30px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 1px;
+    color: black;
+    font-size: 17px;
+    padding-left: 5px;
+    background-color: #f8fafc;
+}
+.task-change {
+    letter-spacing: 1px;
+}
+.input:checked {
+    border: none;
+}
+.edit {
+    width: 530px;
+    height: 30px;
+    background-color: blue;
+    color: white;
+    font-weight: 300;
+    font-size: medium;
+    border-radius: 5px;
+    border-style: none;
+    letter-spacing: 1px;
+}
+.edit:hover  {
+    background-color: rgb(7, 7, 187);
+}
+.edit-button {
+    padding: 10px 0px 0px 30px;
+}
+.error-edit{
+    color: red;
+    font-size: x-small;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.button-black {
+    width: 250px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    font-size: medium;
+}
+.button {
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+.button-black:hover {
+    box-shadow: inset 0 0 0 10em rgba(255, 255, 255, 0.3);
+    border: none;
 }

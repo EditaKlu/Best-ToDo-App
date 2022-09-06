@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best-ToDo-App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/75ec349a37.js" crossorigin="anonymous"></script>
+</head>
+<body class="body">
+    <header class="header">
+        <div class="pavadinimas">
+        <h1>Best <span>ToDo</span> App</h1>
+        </div>
+        <div class="icons">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </header>
+    <main>
+        <div class="task-edit">
+            <h2 class="your-tasks">Edit Task</h2>
+            <div class="task-id">
+                <p class="id-name">Task ID</p>
+                <p class="id-number">123456789</p>
+            </div>
+            <form action="" class="form-change"> 
+            <label for="task-change" class="task-change">Name</label>
+            <input type="text" id="task-change" value="Take out trashes">
+            </form>
+            <div class="completed">
+                <label for="Completed">Completed</label>
+                <input type="checkbox" name="Completed" id="completed" value="completed">
+            </div>
+            <div class="edit-button">
+                <!-- <input class="edit" type="submit" value="Edit"> -->
+                <button class="edit" onclick="document.location='task.html'">Edit</button>
+            </div>
+            <p class="error-edit">There Was An Error</p>
+        </div>
+            <div class="button">
+                <button class="button-black" onclick="document.location='index.html'">Back To Tasks</button>
+            </div>
+    </main>
+</body>
+</html>
