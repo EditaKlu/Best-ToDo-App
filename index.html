@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/75ec349a37.js" crossorigin="anonymous"></script>
 </head>
 <body class="body">
@@ -32,16 +32,24 @@
             </form>
             <p class="error">There Was An Error</p>
         </div>
-        <div class="task-output">
-            <h2>Take out Trashes</h2>
-            <a href="task.html"><i class="fa-solid fa-pen-to-square"></i></a>
-            <i class="fa-solid fa-trash"></i>
-        </div>
-        <div class="task-output">
-            <i class="fa-regular fa-circle-check"></i>
-            <h2>Walk The Dog</h2>
-            <a href="task.html"><i class="fa-solid fa-pen-to-square"></i></a>
-            <i class="fa-solid fa-trash"></i>
+        <div class="all-tasks">
+            <div class="task-output">
+                <h2 class="your-tasks-noted task-not-done">Take out Trashes</h2>
+                <div class="functional-links">
+                    <a href="task.html"><i class="fa-solid fa-pen-to-square fa-xs"></i></a>
+                    <a href=""><i class="fa-solid fa-trash fa-xs"></i></a>
+                </div>
+            </div>
+            <div class="task-output">
+                <div class="task-done-cont">
+                    <i class="fa-regular fa-circle-check"></i>
+                    <h2 class="your-tasks-noted task-done">Walk The Dog</h2>
+                </div>
+                <div class="functional-links">
+                    <a href="task.html"><i class="fa-solid fa-pen-to-square fa-xs"></i></a>
+                    <a href=""><i class="fa-solid fa-trash fa-xs"></i></a>
+                </div>
+            </div>
         </div>
     </main>
 </body>

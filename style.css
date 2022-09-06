@@ -1,5 +1,5 @@
 .body {
-    background-color: rgb(245, 243, 243);
+    background-color: #f8fafc;
     margin: 0 auto;
 }
 
@@ -11,8 +11,8 @@
     height: 100px;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 2px;
-    padding: 0px 0px 0px 30px;
-    box-shadow: 0 8px 2px -2px lightgray;
+    padding: 0px 0px 0px 200px;
+    box-shadow: 0 5px 8px -2px lightgray;
 }
 .pavadinimas {
     float: left;
@@ -25,7 +25,7 @@ span {
     padding: 0px 10px;
 }
 .icons {
-    padding: 0px 40px 0px 40px;
+    padding: 0px 200px 0px 40px;
 }
 .fa-brands:hover {
     color: lightskyblue;
@@ -39,7 +39,7 @@ input:checked {
     height: 200px;
     width: 600px;
     margin: 100px auto 50px;
-    box-shadow: 0 4px 2px 1px lightgray;
+    box-shadow: 0 5px 8px 1px lightgray;
     border-radius: 5px;
 }
 .form {
@@ -51,10 +51,12 @@ input:checked {
     height: 30px;
     border-radius: 5px 0px 0px 5px;
     border-style: solid none solid solid;
+    border-color: lightgray;
+    border-width: 1px;
 }
 ::placeholder {
-    color: lightblue;
-    font-weight: bold;
+    color: lightgray;
+    font-weight: 300;
     font-size: larger;
     padding-left: 5px;
 }
@@ -62,10 +64,10 @@ input:checked {
     width: 150px;
     background-color: blue;
     color: white;
-    font-weight: bold;
-    font-size: larger;
+    font-weight: 300;
+    font-size: medium;
     border-radius: 0px 5px 5px 0px;
-    border-style: solid solid solid none;
+    border-style: none;
 }
 .add:hover  {
     background-color: rgb(7, 7, 187);
@@ -73,22 +75,62 @@ input:checked {
 .task-output {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
     background-color: white;
-    height: 80px;
+    height: 60px;
     width: 600px;
-    margin: 50px auto 50px;
-    box-shadow: 0 4px 2px 1px lightgray;
+    margin: 10px auto 20px auto;
+    box-shadow: 0 5px 8px 1px lightgray;
     border-radius: 5px;
+}
+.task-output:hover {
+    box-shadow: 0 20px 20px -5px lightgray,
+                -20px 20px 20px -10px lightgray, 
+                20px 20px 20px -10px lightgray;
 }
 .your-tasks {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 40px;
+    padding-bottom: 10px;
     letter-spacing: 2px;
+    font-weight: 400;
 }
 .error {
     color: red;
     font-size: x-small;
     letter-spacing: 1px;
     padding-left: 73px;
+}
+.all-tasks{
+    margin: 50px auto 20px auto;
+}
+.your-tasks-noted {
+    font-weight: 400;
+    font-size: 20px;
+}
+.fa-pen-to-square {
+    color: green;
+}
+.fa-trash {
+    color: rgb(155, 13, 13);
+}
+.functional-links {
+    padding: 0px 20px 0px 0px;
+}
+.fa-circle-check{
+    padding-left: 20px;
+    color: green;
+}
+.task-done {
+    padding-left: 20px;
+    text-decoration: line-through;
+}
+.task-done-cont {
+    display: flex;
+    align-items: center;
+}
+.task-not-done {
+    padding-left: 50px;
 }
