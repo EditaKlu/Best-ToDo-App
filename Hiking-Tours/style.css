@@ -67,6 +67,7 @@ h5 {
     font-family: var(--font-family);
 }
 .btn-explore-tours {
+    position: relative;
     text-decoration: none;
     color: var(--white-text);
     background-color: var(--blue-color);
@@ -308,7 +309,17 @@ nav a:hover {
         transition-timing-function: ease-in;
     }
     .continue-exploring {
-        background-color: none;
+        background-color: var(--blue-color);
+        position: relative;
+    }
+    .continue-exploring::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0.5;
         background-image: url(https://images.unsplash.com/photo-1478815768265-ca53ad92dcb4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80)
         ;
         background-repeat: no-repeat;
@@ -321,10 +332,10 @@ nav a:hover {
     }
     .continue-exploring h2 {
         font-size: 64px;
+        position: relative;
     }
     .continue-exploring p {
-        color: black;
-        background-color: rgb(222, 220, 220); 
+        position: relative;
     }
     .about-us-content {
         display: flex;
@@ -343,7 +354,6 @@ nav a:hover {
     }
     .tour-menu {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
         width: 300px;
