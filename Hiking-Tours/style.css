@@ -356,7 +356,8 @@ nav a:hover {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        width: 300px;
+        min-width: 30vw;
+        flex: 1;
     }
     .tours {
         display: flex;
